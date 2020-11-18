@@ -1,1 +1,5 @@
-# react_redux_example
+# ![React + Redux Example + Required App ]
+
+### 
+
+## Getting started
