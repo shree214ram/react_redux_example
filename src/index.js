@@ -1,9 +1,9 @@
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import React from 'react';
-import { store, history} from './store';
+import { store, history } from './store';
 
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import { ConnectedRouter } from 'react-router-redux';
 
 import App from './components/App';
@@ -11,11 +11,14 @@ import App from './components/App';
 ReactDOM.render((
   <Provider store={store}>
     <ConnectedRouter history={history}>
-      <Switch>
-        <Route path="/" component={App} />
-      </Switch>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/" component={App} />
+        </Switch>
+      </BrowserRouter>
     </ConnectedRouter>
   </Provider>
 
 ), document.getElementById('root'));
 //https://github.com/gothinkster/react-redux-realworld-example-app/tree/master/src
+

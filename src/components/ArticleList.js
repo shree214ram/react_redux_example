@@ -19,21 +19,21 @@ const ArticleList = props => {
   return (
     <div>
       {
-        props.articles.map(article => {
+        (props.articles.recentHealthScores || []).map(article => {
           return (
             //@sunny Hame yaha par hamara <TR> bananah he ag grig ka 
             <div className="article-preview">
               <div className="article-meta">
-                <Link to={`/@${article.author.username}`}>
-                  <img src={article.author.image} alt={article.author.username} />
+                <Link to={`/@${article.date}`}>
+                  <img src={article.score} alt={article.date} />
                 </Link>
 
                 <div className="info">
-                  <Link className="author" to={`/@${article.author.username}`}>
-                    {article.author.username}
+                  <Link className="author" to={`/@${article.date}`}>
+                    {article.date}
                   </Link>
                   <span className="date">
-                    {new Date(article.createdAt).toDateString()}
+                    {new Date(article.score).toDateString()}
                   </span>
                 </div>
 
@@ -44,21 +44,10 @@ const ArticleList = props => {
                 </div>
               </div>
 
-              <Link to={`/article/${article.slug}`} className="preview-link">
-                <h1>{article.title}</h1>
-                <p>{article.description}</p>
+              <Link to={`/article/${article.score}`} className="preview-link">
+                <h1>{article.score}</h1>
+                <p>{article.score}</p>
                 <span>Read more...</span>
-                <ul className="tag-list">
-                  {
-                    article.tagList.map(tag => {
-                      return (
-                        <li className="tag-default tag-pill tag-outline" key={tag}>
-                          {tag}
-                        </li>
-                      )
-                    })
-                  }
-                </ul>
               </Link>
             </div>
           );

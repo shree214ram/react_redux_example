@@ -18,7 +18,7 @@ export default (state = {}, action) => {
       return {
         ...state,
         pager: action.pager,
-        articles: action.payload[0].articles,
+        articles: action.payload[0].customer,
         articlesCount: action.payload[0].articlesCount,
         currentPage: 0,
       };

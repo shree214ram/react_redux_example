@@ -1,0 +1,147 @@
+{
+    "customer": {
+        "id": "nttData",
+        "name": "NTT Data",
+        "current": 86,
+        "previous": 81,
+        "kpisCurrent": {
+            "valueRealized": 0.95,
+            "consumption": 0.95,
+            "daysToClose": 0.95,
+            "nps360": 0.15,
+            "severity1Issues": 0.25,
+            "productDefects": 0.10,
+            "escalations": 0.10
+        },
+        "kpisPrevious": {
+            "valueRealized": 0.93,
+            "consumption": 0.89,
+            "daysToClose": 0.97,
+            "nps360": 0.14,
+            "severity1Issues": 0.32,
+            "productDefects": 0.09,
+            "escalations": 0.07
+        },
+        "recentHealthScores": [
+            {
+                "date": "2020-06-04",
+                "score": 0.653
+            },
+            {
+                "date": "2020-07-11",
+                "score": 0.656
+            },
+            {
+                "date": "2020-07-18",
+                "score": 0.616
+            },
+            {
+                "date": "2020-07-25",
+                "score": 0.616
+            }
+        ],
+        "successPlanStatus": [
+            {
+                "objective": "Business Resilience and Agility",
+                "status": "Green",
+                "milestones": [
+                    "Certification of DR",
+                    "Successful 10 day"
+                ]
+            },
+            {
+                "objective": "End User Productivity",
+                "status": "New",
+                "milestones": [
+                    "Upgrade VDI env",
+                    "Deploy additional"
+                ]
+            },
+            {
+                "objective": "Improve Application Performance",
+                "status": "New",
+                "milestones": []
+            },
+            {
+                "objective": "Improved Endpoint Security and Au",
+                "status": "New",
+                "milestones": [
+                    "Identify Corporate"
+                ]
+            },
+            {
+                "objective": "Regulatory Compliance",
+                "status": "New",
+                "milestones": [
+                    "Certification of DR"
+                ]
+            },
+            {
+                "objective": "SDN and Micro-Segmentation",
+                "status": "New",
+                "milestones": [
+                    "DFW/Velo"
+                ]
+            },
+            {
+                "objective": "Secured End Point and Servers",
+                "status": "New",
+                "milestones": [
+                    "Deploy Carbon Black"
+                ]
+            }
+        ],
+        "srsBlockingMilestoneCompletion": [
+            {
+                "srNumber": "20140578207",
+                "productName": "VMware App Volumes 2.0",
+                "milestone": "ICS Milestone #2",
+                "age": 162
+            }
+        ],
+        "otherSrs": [
+            {
+                "srNumber": "20140578309",
+                "productName": "Vmware Cloud on AWS",
+                "age": 30,
+                "alertLevel": "De-Escalated"
+            },
+            {
+                "srNumber": "20140344809",
+                "productName": "Vmware Cloud on AWS",
+                "age": 30,
+                "alertLevel": "De-Escalated"
+            }
+        ],
+        "professionalServicesEngagements": [
+            {
+                "engagementName": "NTT Data_VMC Networking (NORTHEAST2)",
+                "actualStart": "2020-08-03",
+                "plannedActualFinish": "2020-08-12",
+                "projectStatus": "green",
+                "customerSatisfaction": "green"
+            },
+            {
+                "engagementName": "NTT Data_Resident Consulting (NORTHEAST)",
+                "actualStart": "2020-08-03",
+                "plannedActualFinish": "2020-08-12",
+                "projectStatus": "green",
+                "customerSatisfaction": "green"
+            },
+            {
+                "engagementName": "NTT Data_EUC Enterprise Mobility Management (NORTHEAST)",
+                "actualStart": "2020-08-03",
+                "plannedActualFinish": "2020-08-12",
+                "projectStatus": "green",
+                "customerSatisfaction": "green"
+            },
+            {
+                "engagementName": "NTT Data VMC AWS DR Residencies (NE)",
+                "actualStart": "2020-08-03",
+                "plannedActualFinish": "2020-08-12",
+                "projectStatus": "green",
+                "customerSatisfaction": "green"
+            }
+        ]
+    }
+}
