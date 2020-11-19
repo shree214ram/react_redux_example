@@ -20,7 +20,6 @@ class Home extends React.Component {
   }
 
   componentWillUnmount() {
-    this.props.onUnload();
   }
 
   render() {
@@ -46,7 +45,6 @@ const mapStateToProps = state => ({
   appName: state.common.appName,
   token: state.common.token,
   ...state.articleList,
-  tags: state.home.tags,
 });
 
 const mapDispatchToProps = dispatch => ({

@@ -6,6 +6,8 @@ import {
 
 const promiseMiddleware = store => next => action => {
   if (isPromise(action.payload)) {
+    console.log("action.type",action.type)
+    console.log("action.payload",action.payload)
     store.dispatch({ type: ASYNC_START, subtype: action.type });
 
     const currentView = store.getState().viewChangeCounter;

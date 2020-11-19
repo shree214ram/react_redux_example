@@ -20,5 +20,4 @@ ReactDOM.render((
   </Provider>
 
 ), document.getElementById('root'));
-//https://github.com/gothinkster/react-redux-realworld-example-app/tree/master/src
 
